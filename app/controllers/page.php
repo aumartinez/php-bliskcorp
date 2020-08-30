@@ -49,9 +49,44 @@ class Page extends Controller implements Handlers {
     $this->get_model("PageModel")->page_title = "Contact";
     $this->build_page("under-construction");
   }
+  
+  public function login() {
+    $this->get_model("PageModel")->page_title = "Login";
+    $this->build_page("under-construction");
+  }
+  
+  public function feedback() {
+    $this->get_model("PageModel")->page_title = "Login";
+    $this->build_page("under-construction");
+  }
+  
+  public function x_5() {
+    $this->get_model("PageModel")->page_title = "X-5";
+    $this->build_page("x-5");
+  }
+  
+  public function x_10() {
+    $this->get_model("PageModel")->page_title = "X-10";
+    $this->build_page("x-10");
+  }
+  
+  public function x_20() {
+    $this->get_model("PageModel")->page_title = "X-20";
+    $this->build_page("x-20");
+  }
+  
+  public function x_30() {
+    $this->get_model("PageModel")->page_title = "X-30";
+    $this->build_page("x-30");
+  }
+  
+  public function x_50() {
+    $this->get_model("PageModel")->page_title = "X-50";
+    $this->build_page("x-50");
+  }
         
   # Not found handler
-  public function not_found():void {     
+  public function not_found() {     
     # 404 page
     $this->get_model("PageModel")->page_title = "Not found";
     $this->build_page("not-found");
