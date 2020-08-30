@@ -7,7 +7,7 @@ define ("PATH", "/"); # App container folder
 
 # PATH to media files and site root constants
 define ("SITE_ROOT", PATH);
-define ("MEDIA", SITE_ROOT . "public");
+define ("MEDIA", "/" . "public");
 define ("HTML", "public" . DS . "html");
 
 # Default states

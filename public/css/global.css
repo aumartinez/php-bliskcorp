@@ -443,7 +443,7 @@ footer .footer-logo {
   }
   
   .navbar-brand img {
-    height: auto;
+    height: 115px;
   }
   
   .navbar-expand-md .navbar-nav {
@@ -454,7 +454,7 @@ footer .footer-logo {
   
   header {
     height: 115px;
-    padding-top: 0;
+    padding-top: 0;    
   }
   
   .bg-internal.blisk-10 {

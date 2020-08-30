@@ -13,6 +13,8 @@ class Page extends Controller implements Handlers {
     
     # Instantiate custom view output
     $this->output = new PageView();
+    
+    $this->cache_control();
   }
     
   public function home() {
@@ -90,6 +92,17 @@ class Page extends Controller implements Handlers {
     # 404 page
     $this->get_model("PageModel")->page_title = "Not found";
     $this->build_page("not-found");
+  }
+  
+  protected function cache_control() {
+    $path = $_SERVER["DOCUMENT_ROOT"] . DS . "public" . DS;
+    $css = $path . "css" . DS ."global.css";
+    
+    $versions = array(      
+      "VERSION" => filemtime($css),
+    );
+    
+    $this->output->add_localearray($versions);
   }
   
   # Controller/Model/View link
