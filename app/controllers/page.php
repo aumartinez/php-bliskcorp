@@ -39,6 +39,16 @@ class Page extends Controller implements Handlers {
     $this->get_model("PageModel")->page_title = "Deployment";
     $this->build_page("under-construction");
   }
+  
+  public function the_science() {
+    $this->get_model("PageModel")->page_title = "The Science";
+    $this->build_page("under-construction");
+  }
+  
+  public function contact() {
+    $this->get_model("PageModel")->page_title = "Contact";
+    $this->build_page("under-construction");
+  }
         
   # Not found handler
   public function not_found():void {     
