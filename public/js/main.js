@@ -3,7 +3,7 @@
 $(document).ready(function(){
   
   $("#modal .close").click(function(){
-    $("#intro").get(0).pause();
+    $("video").get(0).pause();
   });
   
 });
