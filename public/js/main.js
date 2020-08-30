@@ -2,8 +2,8 @@
 
 $(document).ready(function(){
   
-  $("#submit-search").click(function(){
-    $(".loader").addClass("active");
+  $("#modal .close").click(function(){
+    $("#intro").get(0).pause();
   });
   
 });

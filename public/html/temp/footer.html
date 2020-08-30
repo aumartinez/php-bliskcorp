@@ -3,10 +3,10 @@
       <div class="row justify-content-center">
         <div class="col-md-4">
           <p class="text-center">
-            <img src="{$MEDIA$}/img/footer-logo.png" class="img-fluid" alt="Footer logo" />
+            <img src="{$MEDIA$}/img/footer-logo.png" class="img-fluid footer-logo" alt="Footer logo" />
           </p>
           
-          <ul class="social-logos list-inline text-center">
+          <ul class="social-logos list-inline text-center d-flex justify-content-center">
             <li class="list-item">
               <span class="rounded-circle bg-white"><a href="#" title="Twitter"><i class="fab fa-twitter"></i></a></span>
             </li>
@@ -23,4 +23,27 @@
         </div>
       </div>
     </div>
-  </footer>    
+  </footer>
+  
+  
+  <!-- The Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">          
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <video id="intro" controls>
+            <source src="{$MEDIA$}/media/intro.mp4" type="video/mp4">            
+            Your browser does not support the video tag.
+          </video>
+        </div>
+                
+      </div>
+    </div>
+  </div>

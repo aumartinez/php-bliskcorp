@@ -59,6 +59,7 @@ h3.title-fade {
 
 .list-inline .list-item {
   display: inline-block;
+  width: 100%;
 }
 
 /* Spacers */
@@ -98,6 +99,10 @@ h3.title-fade {
 
 .btn-primary {
   background-color: #1201f6 !important;  
+}
+
+.color-primary {
+  color: #1201f6;
 }
 
 a.nav-link {
@@ -200,7 +205,27 @@ header {
 }
 
 .btn-feedback {
-  padding: 15px 45px;
+  padding: 10px 60px;
+  border-radius: 10px;
+}
+
+/* Footer */
+
+footer a:hover,
+footer a {
+  color: #000;
+}
+
+footer .rounded-circle {
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 28px;
+  display: inline-block;
+}
+
+footer .footer-logo {
+  margin-bottom: 15px;
 }
 
 /* Not found */
@@ -213,6 +238,21 @@ header {
 
 .not-found i {
   color: #C80000;
+}
+
+/* Modal */
+
+#modal video {
+  max-width: 100%;
+}
+
+.modal-header {
+  border-bottom: 0;
+}
+
+.modal-header .close {
+  color: #000;
+  font-size: 24px;
 }
 
 @media (max-width: 767px) {
