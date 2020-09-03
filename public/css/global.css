@@ -142,6 +142,28 @@ a:hover,
   text-align: center;
 }
 
+.navbar-nav .nav-item.dropdown.show .nav-link.dropdown-toggle {
+  border-bottom: 3px solid #fff;
+  box-sizing: border-box; 
+}
+
+.dropdown-menu.show {
+  border-radius: 0;
+  background-color: rgba(18, 1, 246, 0.8);
+  color: #fff;
+}
+
+.navbar-nav .dropdown-item {
+  color: #fff;
+  text-align: center;
+}
+
+.navbar-nav a.dropdown-item:focus,
+.navbar-nav a.dropdown-item:hover {
+  color: #000;
+  background-color: #fff;  
+}
+
 .navbar-expand-md .navbar-nav a.nav-link {
   padding: 10px 20px;
 }
@@ -212,7 +234,6 @@ header {
   padding: 10px 60px;
   border-radius: 10px;
 }
-
 
 /* Footer */
 
@@ -286,6 +307,65 @@ footer .footer-logo {
 }
 
 
+/* Internal pages */
+
+section img {
+  margin-bottom: 15px;
+}
+
+/* Our Team */
+
+.card {
+  border: 0;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-body {
+  text-align: center;
+  padding: 1.25rem 0;
+}
+
+.card-body p:first-child {
+  margin-bottom: 0;
+}
+
+/* Products page */
+
+h4.product-title {
+  font-size: 40px;
+  font-style: italic;  
+}
+
+/* Carousel */
+
+.carousel-inner .carousel-item img {
+  width: 100%;
+}
+
+.carousel-indicators li {
+  background-color: #ccc;
+}
+
+.carousel-indicators li.active {
+  background-color: #1201f6;
+}
+
+.carousel-control span {
+  font-size: 40px; 
+  color: #000;
+  opacity: 0.8;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #fff;
+  line-height: 0;
+}
+
+/* Mobile only */
+
 @media (max-width: 767px) {
   .hidden-xs {
     display: none;
@@ -293,6 +373,10 @@ footer .footer-logo {
   
   .p-xs-0 {
     padding: 0;
+  }
+  
+  .xs-text-center {
+    text-align: center;
   }
 }
 
@@ -333,6 +417,12 @@ footer .footer-logo {
   .navbar-nav,
   .navbar-expand-md .navbar-nav {
     font-size: 12px;
+    height: 42px;
+    box-sizing: border-box;
+  }
+  
+  .navbar-nav .dropdown-item {
+    text-align: left;
   }
 
   .navbar-collapse {
@@ -442,8 +532,7 @@ footer .footer-logo {
   /* Navbar */  
   
   .navbar {
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0;
   }
   
   .navbar-brand img {
@@ -479,6 +568,12 @@ footer .footer-logo {
   
   .product-card.blisk-30 .prod-desc {
     margin-bottom: 0;
+  }
+  
+  /* Content pages */
+  
+  section img {
+    margin-bottom: 15px;
   }
 }
 

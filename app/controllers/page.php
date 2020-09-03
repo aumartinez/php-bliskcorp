@@ -22,9 +22,14 @@ class Page extends Controller implements Handlers {
     $this->build_page("home");
   }
   
-  public function about() {
+  public function about_us() {
     $this->get_model("PageModel")->page_title = "About";
-    $this->build_page("under-construction");
+    $this->build_page("about");
+  }
+  
+  public function our_team() {
+    $this->get_model("PageModel")->page_title = "Our Team";
+    $this->build_page("our-team");
   }
   
   public function your_needs() {
@@ -65,6 +70,11 @@ class Page extends Controller implements Handlers {
   public function x_5() {
     $this->get_model("PageModel")->page_title = "X-5";
     $this->build_page("x-5");
+  }
+  
+  public function px_5() {
+    $this->get_model("PageModel")->page_title = "X-5";
+    $this->build_page("px-5");
   }
   
   public function x_10() {
